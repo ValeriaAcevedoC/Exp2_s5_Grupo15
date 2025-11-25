@@ -5,7 +5,7 @@ TO_CHAR(c.NUMRUN, '99g999G999') || '-' || c.DVRUN                               
 INITCAP(c.PNOMBRE || ' ' || c.APPATERNO)                                        AS "Nombre Cliente",
 UPPER(p.nombre_prof_ofic)                                                       AS "Profesión Cliente",
 TO_CHAR(c.FECHA_INSCRIPCION, 'DD-MM-YY')                                        AS "Fecha de Inscripción",
-c.DIRECCION                                                                     AS "Direccíón Cliente"
+c.DIRECCION                                                                     AS "Dirección Cliente"
 FROM cliente c
 JOIN 
 profesion_oficio p
@@ -36,6 +36,7 @@ ORDER BY 2 ASC;
 
 
 select * from clientes_cupos_compra;
+
 
 
 
